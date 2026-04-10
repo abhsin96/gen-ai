@@ -17,6 +17,7 @@ google-generativeai
 langchain-huggingface
 transformers
 huggingface-hub
+sentence-transformers
 torch
 torchvision
 torchaudio
