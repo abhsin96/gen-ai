@@ -56,11 +56,10 @@ template = load_prompt("template.json")
 
 # Generate summary on button click
 if st.button("Summarize"):
-    prompt = template.invoke({
+    chain = template | model
+    result = chain.invoke({
         "paper_input": paper_input,
         "style_input": style_input,
         "length_input": length_input
     })
-    
-    result = model.invoke(prompt)
     st.write(result.content)
