@@ -12,7 +12,7 @@ parser = StrOutputParser()
 
 # First prompt: Generate facts about a topic
 prompt1 = PromptTemplate(
-    template="Generate 5 interesting facts about {topic}",
+    template="Generate a interesting facts about {topic}",
     input_variables=["topic"]
 )
 
