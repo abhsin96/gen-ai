@@ -2,6 +2,9 @@
 langchain
 langchain-core
 
+# Document Loaders
+pypdf
+
 # OpenAI Integration
 langchain-openai
 openai
